@@ -13,7 +13,7 @@ export default function ExpenseItem(props) {
             <h5 className="expense-item-description">{props.description}</h5>
           </div>
           <div className="col-sm-3">
-            <span className="expense-item-price">{props.price}</span>
+            <span className="expense-item-price">€{props.price}</span>
           </div>
         </div>
       </div>

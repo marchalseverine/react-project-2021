@@ -23,10 +23,10 @@ export default function Forms() {
   }
 
   return (
-    <div className="forms" onSubmit={handleSubmit}>
+    <div className="forms mt-5 mx-5" onSubmit={handleSubmit}>
       <div className="input-group mb-3">
         <input
-          type="text"
+          type="date"
           onChange={updateDate}
           className="form-control"
           placeholder="date"
@@ -40,12 +40,12 @@ export default function Forms() {
           placeholder="What Expense?"
           aria-label="What expense"
         />
-        <span className="input-group-text">Price</span>
+        <span className="input-group-text">€</span>
         <input
           type="text"
           onChange={updatePrice}
           className="form-control"
-          placeholder="€"
+          placeholder="Price"
           aria-label="What expense"
         />
         <input type="submit" value="submit" />
