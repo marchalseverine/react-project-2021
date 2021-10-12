@@ -6,21 +6,21 @@ export default function Forms() {
   let [description, setDescription] = useState();
   let [price, setPrice] = useState();
 
-  function handleSubmit(event) {
+  const handleSubmit = (event) => {
     event.preventDefault();
-  }
-  function updateDate(event) {
+  };
+  const updateDate = (event) => {
     event.preventDefault();
     setDate(event.target.value);
-  }
-  function updateDescription(event) {
+  };
+  const updateDescription = (event) => {
     event.preventDefault();
     setDescription(event.target.value);
-  }
-  function updatePrice(event) {
+  };
+  const updatePrice = (event) => {
     event.preventDefault();
     setPrice(event.target.value);
-  }
+  };
 
   return (
     <div className="forms mt-5 mx-5" onSubmit={handleSubmit}>
@@ -50,9 +50,6 @@ export default function Forms() {
         />
         <input type="submit" value="submit" />
       </div>
-      <ExpenseItem date={date} description={description} price={price} />
-      <ExpenseItem date={date} description={description} price={price} />
-      <ExpenseItem date={date} description={description} price={price} />
       <ExpenseItem date={date} description={description} price={price} />
     </div>
   );
